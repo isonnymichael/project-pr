@@ -2,10 +2,10 @@
   "name": "project-pr",
   "version": "1.0.0",
   "description": "",
-  "main": "apps.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./bin/www",
+    "start": "node index.js",
     "watch": "nodemon --ext *"
   },
   "author": "",
@@ -21,14 +21,14 @@
   },
   "builds": [
     {
-      "src": "app.js",
+      "src": "index.js",
       "use": "@now/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.js"
+      "dest": "index.js"
     }
   ]
 }

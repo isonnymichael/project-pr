@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Files</title>
+</head>
+<body>
+    <h1>List of Project Files:</h1>
+    <ul>
+        <% files.forEach(function(file) { %>
+            <li>
+                <iframe src="<%= '/projects/' + file %>" frameborder="0" width="100%" height="20" scrolling="no"></iframe>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
